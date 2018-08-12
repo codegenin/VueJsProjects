@@ -4,6 +4,25 @@
 
 ## Build Setup
 
+# create src/firebase/init.js and add code snippet replacing the xxxx with your firebase credentials
+``` javascript
+import firebase from 'firebase';
+
+// Initialize Firebase
+var config = {
+    apiKey: "xxxxxxxxxxxxxxxxxxxxxxxxxx",
+    authDomain: "xxxxxxxxxxxxxxxxxxxxxx",
+    databaseURL: "xxxxxxxxxxxxxxxxxxxxx",
+    projectId: "xxxxxxxxxxxxxxxxxxxxxxx",
+    storageBucket: "xxxxxxxxxxxxxxxxxxx",
+    messagingSenderId: "xxxxxxxxxxxxxxx"
+};
+
+const firebaseApp = firebase.initializeApp(config);
+firebaseApp.firestore().settings({timestampsInSnapshots: true});
+
+export default firebaseApp.firestore();
+
 ``` bash
 # install dependencies
 npm install
