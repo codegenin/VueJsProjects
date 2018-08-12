@@ -4,7 +4,7 @@
 
 # Configuration
 
-## create src/firebase/init.js and add code snippet replacing the xxxx with your firebase credentials
+## Create file src/firebase/init.js and add code snippet replacing the xxxx with your firebase credentials
 
 ``` javascript
 import firebase from 'firebase';
