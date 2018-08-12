@@ -1,10 +1,11 @@
-# smoothies
+# Smoothies
 
-> A Vue.js project
+> A VueJs Practice App
 
-## Build Setup
+# Configuration
 
-# create src/firebase/init.js and add code snippet replacing the xxxx with your firebase credentials
+## create src/firebase/init.js and add code snippet replacing the xxxx with your firebase credentials
+
 ``` javascript
 import firebase from 'firebase';
 
@@ -22,6 +23,9 @@ const firebaseApp = firebase.initializeApp(config);
 firebaseApp.firestore().settings({timestampsInSnapshots: true});
 
 export default firebaseApp.firestore();
+```
+
+## Build Setup
 
 ``` bash
 # install dependencies
