@@ -9,7 +9,7 @@
 
             <div class="field add-ingredients">
                 <label for="ingredients">Add Ingridient:</label>
-                <input type="text" name="ingredient">
+                <input type="text" name="ingredient" @keydown.tab="AddIngredient" v-model="ingredient">
             </div>
 
             <div class="field center-align">
@@ -24,29 +24,32 @@ export default {
   name: "AddSmoothie",
   data() {
     return {
-        title: null
+      title: null,
+      ingredients: [],
+      ingredient: null
     };
   },
   methods: {
-      AddSmoothie() {
-          console.log(this.title);
-      }
+    AddSmoothie() {
+      console.log(this.title);
+    },
+    AddIngredient() {}
   }
 };
 </script>
 
 <style>
 .add-smoothie {
-    margin-top: 60px;
-    padding: 20px;
-    max-width: 500px;
+  margin-top: 60px;
+  padding: 20px;
+  max-width: 500px;
 }
 .add-smoothie h2 {
-    font-size: 2em;
-    margin: 20px auto;
+  font-size: 2em;
+  margin: 20px auto;
 }
 .add-smoothie .field {
-    margin: 20px auto;
+  margin: 20px auto;
 }
 </style>
 
