@@ -45,7 +45,7 @@ export default {
             id: doc.id,
             name: doc.data().name,
             content: doc.data().content,
-            timestamp: moment(doc.data().timestamp).format('lll')
+            timestamp: moment(doc.data().timestamp).format("lll")
           });
         }
       });
@@ -64,12 +64,11 @@ export default {
 }
 .chat .time {
   display: block;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 .messages {
   max-height: 300px;
   overflow: auto;
-
 }
 .messages::-webkit-scrollbar {
   width: 3px;
