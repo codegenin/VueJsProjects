@@ -1,15 +1,20 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import GMap from '@/components/home/GMap'
+import Singup from '@/components/auth/Signup'
 
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+  routes: [{
+    path: '/',
+    name: 'GMap',
+    component: GMap
+  },
+  {
+    path: '/signup',
+    name: 'Signup',
+    component: Singup
+  }
+]
 })
