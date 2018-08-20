@@ -27,8 +27,11 @@ export default {
     }
   },
   mounted() {
+    // get user geolocation
+    if(navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition()
+    }
     this.renderMap();
-    console.log(firebase.auth().currentUser);
   }
 };
 </script>
